@@ -1,0 +1,41 @@
+Go to the official Chrome Driver downloads page:
+👉 https://chromedriver.chromium.org/downloads
+ 
+Chrome for Developers
+
+Find the version that matches your installed Chrome browser version.
+
+To check your Chrome version, open Chrome and go to chrome://settings/help.
+
+Download the appropriate driver for your OS: Windows, macOS, or Linux. 
+Chrome for Developers
+
+Extract the ZIP to get the chrome driver executable.
+
+Important Links:
+Edureka:
+https://www.youtube.com/watch?v=FRn5J31eAMw&list=PL9ooVrP1hQOFP9H8Y15DVGCA6GavhgJ8a&index=1
+
+Control+shift+O: It will add all the packages
+
+
+Url Links:
+==========
+https://omayo.blogspot.com/
+
+https://the-internet.herokuapp.com/javascript_alerts
+
+Interview Preparation urls:
+==========================
+https://www.youtube.com/watch?v=duU7vRnYRhw
+
+https://www.youtube.com/watch?v=5KtEX26Gi_g
+
+C:\Program Files\Java\jdk-25
+
+C:\Program Files\Java\jdk-25\bin
+
+To Apply Online:
+=================
+https://incometaxindia.gov.in/Pages/pan.aspx
+

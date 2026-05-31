@@ -1,0 +1,55 @@
+{
+  "website": "https://testautomationpractice.blogspot.com/",
+  "alertsAndPopups": [
+    {
+      "name": "Simple Alert",
+      "locatorType": "xpath",
+      "locatorValue": "//button[@id='alertBtn']",
+      "alertType": "alert",
+      "expectedText": "I am an alert box!",
+      "action": "accept"
+    },
+    {
+      "name": "Confirmation Alert - Accept",
+      "locatorType": "xpath",
+      "locatorValue": "//button[@id='confirmBtn']",
+      "alertType": "confirm",
+      "expectedText": "Press a button!",
+      "action": "accept",
+      "resultText": "You pressed OK!"
+    },
+    {
+      "name": "Confirmation Alert - Dismiss",
+      "locatorType": "xpath",
+      "locatorValue": "//button[@id='confirmBtn']",
+      "alertType": "confirm",
+      "expectedText": "Press a button!",
+      "action": "dismiss",
+      "resultText": "You pressed Cancel!"
+    },
+    {
+      "name": "Prompt Alert",
+      "locatorType": "xpath",
+      "locatorValue": "//button[@id='promptBtn']",
+      "alertType": "prompt",
+      "expectedText": "Please enter your name:",
+      "inputValue": "John",
+      "action": "accept",
+      "resultText": "Hello John! How are you today?"
+    },
+    {
+      "name": "New Tab",
+      "locatorType": "xpath",
+      "locatorValue": "//button[contains(text(),'New Tab')]",
+      "popupType": "tab",
+      "action": "switchToNewTab"
+    },
+    {
+      "name": "Popup Windows",
+      "locatorType": "xpath",
+      "locatorValue": "//button[contains(text(),'Popup Windows')]",
+      "popupType": "window",
+      "action": "switchToPopupWindow"
+    }
+  ]
+}
