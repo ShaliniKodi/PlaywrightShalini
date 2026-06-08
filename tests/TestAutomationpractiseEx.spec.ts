@@ -1,0 +1,24 @@
+import { test, expect } from '@playwright/test';
+ test.only('has title', async ({ page }) => {
+ await page.goto("https://testautomationpractice.blogspot.com/");
+ const name = page.getByRole('textbox',{name:'Enter Name'});
+ await name.fill("sai");
+ const email = page.getByRole('textbox',{name:'Enter Email'});
+ await email.fill("sai@example.com");
+ const phonenum = page.getByRole('textbox',{name:'Enter Phone'});
+ await phonenum.fill("1234567890") ;
+ await page.getByRole('textbox',{name:'Address:'}).fill("401 balaji nivas,addagutta,kukatpally,Hyderabad");
+ await page.locator('#female').click();
+//  const days = page.locator('#sunday');
+//  await days.nth(0).check();
+ const days = page.locator('#wednesday');
+ await days.nth(0).check();
+ const contryname = await page.locator('#country').selectOption('canada');
+ console.log(contryname);
+ const multicolorsel = await page.locator('#colors').selectOption('Yellow');
+ console.log(multicolorsel);
+ const multicolorsel1 = await page.locator('#colors').selectOption('Green');
+ console.log(multicolorsel1);
+ await page.locator('.feed-link').click();
+ await page.waitForTimeout(3000);
+  });

@@ -1,27 +1,57 @@
-import { test } from '@playwright/test';
-import { SauceDemoPage } from '../pages/SauceDemoPage';
+import { expect, test } from '@playwright/test';
+test('Screenshot', async ({ page }) => {
 
-test('Sauce Demo checkout using page object model', async ({ page }) => {
-  const sauceDemo = new SauceDemoPage(page);
+  // Swag Labs Login page
 
-  await sauceDemo.goto();
-  await sauceDemo.login('standard_user', 'secret_sauce');
-  await sauceDemo.expectTitle('Products');
+  await page.goto('https://www.saucedemo.com/');
 
-  await sauceDemo.sortProductsLowToHigh();
-  await sauceDemo.addProductToCartAtIndex(2);
-  await sauceDemo.openCart();
+  await page.fill('#user-name', 'standard_user');
 
-  await sauceDemo.expectTitle('Your Cart');
-  await sauceDemo.clickCheckout();
+  await page.fill('#password', 'secret_sauce');
 
-  await sauceDemo.expectTitle('Checkout: Your Information');
-  await sauceDemo.fillCheckoutInformation('Sandesh', 'G', '07304');
+  await page.click('#login-button');
 
-  await sauceDemo.expectTitle('Checkout: Overview');
-  await sauceDemo.finishCheckout();
+  // Products page
 
-  await sauceDemo.expectTitle('Checkout: Complete!');
-  await sauceDemo.backToProducts();
+  await expect(page.locator('.title')).toHaveText('Products');
+
+  await page.selectOption('//select[@class="product_sort_container"]', { value: 'lohi' });
+
+  await page.waitForTimeout(5000);
+
+  await page.click("//div[@class='inventory_list']/div[2]//button");
+
+  await page.waitForTimeout(10000);
+
+  await page.click("//div[@id='shopping_cart_container']");
+ 
+  //Checkout: Your Information page
+
+  expect(page.locator('.title')).toHaveText('Your Cart');
+
+  await page.click("//button[@id='checkout']");
+
+  expect(page.locator('.title')).toHaveText('Checkout: Your Information');
+
+  await page.fill('#first-name', 'Sandesh');
+
+  await page.fill('#last-name', 'G');
+
+  await page.fill('#postal-code', '07304');
+
+  await page.click("//input[@id='continue']");
+ 
+  //Overview  page
+
+  await expect(page.locator('.title')).toHaveText('Checkout: Overview');
+
+  await page.click("//button[@id='finish']");
+
+  //await page.pause();
+
+  await expect(page.locator('.title')).toHaveText('Checkout: Complete!');
+
+  await page.click("//button[@id='back-to-products']");
+
 });
  
