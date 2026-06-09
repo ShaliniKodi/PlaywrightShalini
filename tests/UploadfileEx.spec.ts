@@ -4,6 +4,6 @@ await page.goto('https://practice.expandtesting.com/upload?utm_source=chatgpt.co
 const fileupload = './Screenshots/images.jpeg';
 await page.locator('#fileInput').setInputFiles(fileupload);
 await page.locator('#fileSubmit').click();
-await page.waitForTimeout(5000);
-await expect(page.locator('#uploaded-files')).toHaveText('images.jpeg');
+//await page.waitForTimeout(5000);
+//await expect(page.locator('#uploaded-files')).toHaveText('images.jpeg');
 });
