@@ -1,11 +1,14 @@
-const arrnum:number[] = [55,66,12,33,17,89,15];
-function findlargest(){
-  let largest = arrnum[0];  
-for(let i=1;i<arrnum.length;i++){
-  if(arrnum[i]>largest){
-    largest=arrnum[i];
- }   
+let arrlar:number[]=[10,18,35,45,100,2];
+function largestArray(){
+  let largestnum = arrlar[0];  
+  for(let i=0;i<arrlar.length;i++){
+  //let largestnum = arrlar[0];  
+  if(arrlar[i]>largestnum){
+    largestnum = arrlar[i];
+
+  }
 }
-return largest;
-}
-console.log(findlargest())
+  
+  return largestnum;}
+
+console.log('Largest Number in the array is:' + largestArray());

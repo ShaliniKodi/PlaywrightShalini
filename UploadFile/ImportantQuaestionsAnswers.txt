@@ -1,0 +1,49 @@
+
+1)Return Type for getWindowHandle and getWindowHandles?
+getWindowHandle():
+return type: String
+returns the unique id of the current active browser window
+
+getWindowHandles:
+Return type: Set<String>
+Returns a set of all window IDs opened by the WebDriver session
+
+2)Write a program to write the Count of each character of a string using hashmap.
+
+3)find the largest second or third element using Arrays.
+
+4)Write XPath for the Web Table row using Selenium using Xpath Axes functions.
+
+5)Switching from parent window to third window and come back to main window
+
+Web Table Sample Web Sites:
+=========================
+https://chatgpt.com/c/69c67dee-1614-8321-a9c9-de4bf744d4a9
+https://chatgpt.com/c/69c66a3b-85e4-8322-ae86-a12c6aceaed2
+
+https://www.tutorialspoint.com/selenium/practice/text-box.php
+
+To retrieve a specific value from the Web Table we use getText
+
+Web Table Having Checkbox:
+========================
+https://demo.guru99.com/test/web-table-element.php
+
+https://chatgpt.com/c/69c92d52-6c08-8323-949f-28ed70ee5e46
+
+Username:admin@yourstore.com
+password:admin
+
+InvalidSelectorException: If we select a wrong Xpath
+NoSuchElementException: If we are unable to locate the element in DOM
+
+SELECT Products.ProductID, Products.ProductName, Categories.CategoryName
+FROM Products
+JOIN Categories ON Products.CategoryID = Categories.CategoryID;
+
+SELECT OrderDetails.OrderDetailID,OrderDetails.ProductID,OrderDetails.Quantity
+FROM OrderDetails
+
+SELECT OrderDetails.OrderDetailID,OrderDetails.ProductID,OrderDetails.Quantity,Orders.CustomerID,Orders.EmployeeID
+
+

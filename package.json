@@ -1,7 +1,7 @@
 {
   "name": "playwrightmycode",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000P\u0000l\u0000a\u0000y\u0000W\u0000r\u0000i\u0000g\u0000h\u0000t\u0000T\u0000e\u0000s\u0000t\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
@@ -14,5 +14,16 @@
   },
   "dependencies": {
     "exceljs": "^4.4.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaliniKodi/PlaywrightShalini.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShaliniKodi/PlaywrightShalini/issues"
+  },
+  "homepage": "https://github.com/ShaliniKodi/PlaywrightShalini#readme"
 }

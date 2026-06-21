@@ -17,9 +17,21 @@ const countrynames = await page.locator('#country').selectOption('Brazil');
  console.log(animalname);
  await page.getByRole("button",{name:'START'}).click();
  console.log("Start button is clicked");
-//  const button = await page.getByRole("button",{name:'Submit'});
-//  console.log(button.click());
+ const button = await page.getByRole("button",{name:'Point Me'});
+ await page.waitForTimeout(3000);
+ console.log("Point Me Button is clicked: " + button.click());
+ //drag and drop Example
+ const sourcelocator = page.locator("//div[@id='draggable']");
+ const destilocator = page.locator("//div[@id='droppable']");
+ await sourcelocator.dragTo(destilocator);
+ console.log("Source locator is dropped to destination locator");
+ 
+ });
+ 
+
+ 
+
  
 
 
-});
+
