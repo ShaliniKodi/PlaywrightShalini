@@ -5,7 +5,7 @@ page.once('dialog', async dialog => {
 let promptalert = dialog.message();
 console.log("I Prompt You,Change me",promptalert);
 await page.waitForTimeout(2000);
-await dialog.accept();
+await dialog.dismiss();
 });
 await page.locator("//button[contains(text(),'Show Prompt ')]").click();
 });

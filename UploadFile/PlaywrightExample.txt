@@ -1,0 +1,51 @@
+1. Hover
+ 
+await page.locator('#menu').hover();
+ 
+2. Double Click
+ 
+await page.locator('#button').dblclick();
+ 
+3. Right Click
+ 
+await page.locator('#button').click({
+  button: 'right'
+});
+Arrow Down
+await page.keyboard.press('ArrowDown');
+
+//input[@id='password']
+
+await page.goto('https://www.saucedemo.com');
+  
+  //await expect(page).toHaveTitle("Swag Labs");
+  await page.fill("//input[@id='user-name']","standard_user");
+  await page.fill("//input[@id='password']","secret_sauce");
+  await page.locator("//input[@id='login-button']").click();
+  await page.locator("//button[@id='add-to-cart-sauce-labs-backpack']").click();
+  await page.locator("//a[@class='shopping_cart_link']").click();
+  await page.waitForTimeout(3000);
+  await page.locator("//button[@name='checkout']").click();
+
+
+Select sel = new Select(driver.findElement(By.id("country")));
+sel.SelectByVisibleText("India");
+
+WebDriverwait wait = new WebDriverWait(driver,durationOfSeconds(10));
+wait.UntilExpectedConditions.VisibilityOfElementLocated(By.id("login")));
+
+Alert alert = driver.switchTo().alert();
+alert.accept();
+
+String parent = driver.getWindowHandles();
+
+for(String childwin: driver.getWindowHandles()){
+
+driver.switchTo().window(childwin);
+
+JavaScriptExecutor js = (JavaScriptExecutor)driver;
+
+js.executeScript("window.scrollBy(0,500)");
+
+}
+

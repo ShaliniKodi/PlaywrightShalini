@@ -1,0 +1,44 @@
+https://chatgpt.com/c/6a0dadd8-0bc0-8321-a82d-e8bd5d94deec
+
+Key Points to remember:
+======================
+1)AccelQ is a codeless automation testing platform
+
+2)Codeless automation
+
+3)AI-based test design and maintenance
+Web, API, Mobile, and Desktop testing
+Continuous Integration support
+4)Test case management
+5)Self-healing automation
+6)Reusable components
+7)BDD support
+Benefits of AccelQ:
+==================
+4)AccelQ reduces automation complexity by eliminating heavy coding requirements. It improves productivity through reusable logic
+
+AccelQ supports:
+
+Functional testing
+API testing
+Regression testing
+End-to-end testing
+Mobile testing
+UI testing
+Cross-browser testing
+Data-driven testing
+Continuous testing
+
+A login action can be reused in hundreds of test cases.
+
+How do you integrate AccelQ with CI/CD tools?
+Jenkins
+Azure DevOps
+GitHub Actions
+Bamboo
+Jira
+
+What is parameterization in AccelQ?
+Parameterization allows execution of the same test case with multiple sets of input data. This supports data-driven testing and improves test coverage.
+
+Example: Testing login functionality with multiple usernames and passwords.
